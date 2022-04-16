@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c4c0c0;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+header {
+    width: 700px;
+    background-color: #636262;
+    padding: 0px 10px 10px 10px;
+    margin: 0px auto 5px auto;
+    text-align: center;
+    border: 2px dotted black;
+    box-shadow: 5px 2px 5px rgb(0 0 0 / 44%);
+    border-radius: 20px 0px;
+}
+
+header>h1 {
+    font: bolder 2em;
+    color: #ffffff;
+}
+
+nav {
+    background: white;
+    box-shadow: 1px 1px 1px black;
+    border-bottom-right-radius: 18px;
+}
+
+a {
+    color: #000000;
+    margin: 30px;
+}
+
+nav>a:visited {
+    color: #d31c1c;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #30af16;
+}
+
+nav>a:active {
+    color: #c4b706;
+}
+
+main {
+    width: 700px;
+    background-color: #ffffff;
+    margin: 0px auto 5px auto;
+    padding: 1px 10px 10px 10px;
+    text-align: justify;
+    color: #000000;
+    border: 2px dotted black;
+    box-shadow: 7px 3px 8px rgba(0, 0, 0, 0.445);
+    border-radius: 0px 20px;
+}
+
+section {
+    margin: 10px 5px 5px 5px;
+}
+
+#titulo1 {
+    border-top-right-radius: 20px;
+}
+
+#titulo2 {
+    border-bottom-left-radius: 20px;
+}
+
+article {
+    background-color: #b4b4b4;
+    padding: 5px 10px;
+}
+
+article>h1 {
+    padding: 3px 0px;
+    margin: 2px 0px 4px 0px;
+    text-align: center;
+    font: bolder 1.5em Verdana, sans-serif;
+}
+
+article>p {
+    line-height: 20px;
+}
+
+aside {
+    text-align: right;
+    margin: 2px;
+}
+
+aside:hover {
+    text-decoration: underline;
+}
+
+footer {
+    border-radius: 10px 30px;
+    width:  700px;
+    background-color: #636262;
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto;
+    font-weight: bolder;
+    color: #ffffff;
+    border: 2px dotted black;
+    box-shadow: -18px -8px 5px rgba(0, 0, 0, 0.452);
+}
+
+footer>p:hover {
+    text-decoration: underline;
+}
+
+footer > p::after {
+    content: ' ←';
+}
+
+footer > p::before {
+    content: '→ ';
+}
