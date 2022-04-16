@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+
+body {
+    background-image: linear-gradient(to left, #1b1bf8, #2424d8, #0505ce);
+}
+
+div {
+    background-image: linear-gradient(to left, #e2e2e2, #cacaca);
+    width: 900px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#título {
+    background-image: linear-gradient(to left, #1b1bf8, #2424d8, #0505ce);
+    color: #fff;
+    margin: auto;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.básico {
+    color: #11ca11;
+    text-align: right;
+    text-decoration: underline;
+    border-radius: 12px;
+    background-image: linear-gradient(to left, #dadada, #a3a3a3);
+}
+
+.intermediário {
+    color: #adad07;
+    text-align: right;
+    text-decoration: underline;
+    border-radius: 12px;
+    background-image: linear-gradient(to left, #dadada, #a3a3a3);
+}
+
+.avançado {
+    color: #e70101;
+    text-align: right;
+    text-decoration: underline;
+    border-radius: 12px;
+    background-image: linear-gradient(to left, #dadada, #a3a3a3);
+}
+
+h1 {
+    font: normal bolder 2em 'VT323', monospace;
+    text-align: center;
+}
+
+h2{
+    font: italic bold 1.5em 'Nova Mono', monospace;
+}
+
+p{
+    font: normal bold 1em 'Xanh Mono', monospace;
+    text-align: justify;
+}
