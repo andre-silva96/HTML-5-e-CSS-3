@@ -72,9 +72,9 @@ table > thead {
     font-weight: bolder;
 }
 
-th {
-    font-weight: normal;
+td {
     border: 1px solid black;
+    text-align: center;
 }
 
 tbody > tr th:hover {
