@@ -46,6 +46,7 @@ header {
 .capa img {
     height: calc(100vh - 53px);
     width: 100%;
+    object-fit: cover;
 }
 
 .sinopse-info, .disponibilidade-info {
