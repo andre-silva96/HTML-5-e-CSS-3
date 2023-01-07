@@ -31,6 +31,11 @@ header {
     font-weight: bold;
 }
 
+.header-title a {
+    color: gray;
+    text-decoration: none;
+}
+
 .header-title span {
     color: #3500b0;
 }
@@ -58,6 +63,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .banner-text {
@@ -82,6 +88,7 @@ nav ul li a {
     color: #fff;
     font-size: 1.3rem;
     margin-top: 3vh;
+    font-weight: normal;
 }
 
 .welcome-section {
@@ -97,6 +104,8 @@ nav ul li a {
 .welcome-section p {
     text-align: center;
     margin-bottom: 15px;
+    color: #000;
+    font-weight: normal;
 }
 
 #room-section-links {
@@ -135,9 +144,14 @@ nav ul li a {
     color: gray;
 }
 
-.rotes h2, p {
+.rotes h2, .rotes p {
     text-align: center;
     margin: 30px 0;
+    color: #000;
+}
+
+.rotes p {
+    font-weight: normal;
 }
 
 iframe {
@@ -148,9 +162,10 @@ iframe {
     margin: 30px 0;
 }
 
-.about-section h2, p {
+.about-section h2, .about-section p {
     text-align: center;
     margin: 30px 0;
+    color: #000;
 }
 
 .about-itens {
@@ -182,6 +197,8 @@ article img {
 
 .about-item-element p {
     text-align: left;
+    color: #000;
+    font-weight: normal;
 }
 
 footer {
@@ -217,4 +234,81 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+
+/* Room Pages */
+
+.single-rooms, 
+.couple-rooms,
+.family-rooms {
+    max-width: 85vw;
+    margin: 40px auto;
+}
+
+.single-rooms h2, 
+.couple-rooms h2,
+.family-rooms h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.single-rooms p, 
+.couple-rooms p,
+.family-rooms p {
+    color: #000;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.single-rooms-images, 
+.couple-rooms-images,
+.family-rooms-images {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sigle-rooms-img, 
+.couple-rooms-img,
+.family-rooms-img {
+    margin: 10px 5px;
+    max-width: calc((100% - 30px) / 3);
+}
+
+.sigle-rooms-img img, 
+.couple-rooms-img img,
+.family-rooms-img img {
+    max-width: 100%;
+    height: 260px;
+}
+
+.single-room-list, 
+.couple-room-list,
+.family-room-list {
+    max-width: 85vw;
+    margin: auto;
+}
+
+.single-room-list h3, 
+.couple-room-list h3,
+.family-room-list h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.single-room-list ul, 
+.couple-room-list ul,
+.family-room-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.single-room-list ul li div, 
+.couple-room-list ul li div,
+.family-room-list ul li div {
+    max-width: calc(100% / 4);
 }
