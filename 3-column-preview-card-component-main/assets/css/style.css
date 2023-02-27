@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --sideLeft: hsl(31, 77%, 52%);
+    --sideCenter: hsl(184, 100%, 22%);
+    --sideRight: hsl(179, 100%, 13%);
+    --colorText: #fff;
+    --titleText: 'Big Shoulders Display';
+    --bodyText: 'Lexend Deca';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--colorText);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+}
+
+.container-itens {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img {
+    margin-bottom: 20px;
+}
+
+.body-container {
+    margin-bottom: 40px;
+}
+
+.body-container h1 {
+    font-family: var(--titleText);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.body-container p {
+    font-family: var(--bodyText);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.button {
+    width: 130px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--colorText);
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.left {
+    background-color: var(--sideLeft);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.left .button:hover {
+    background-color: var(--colorText);
+    color: var(--sideLeft);
+}
+
+.center {
+    background-color: var(--sideCenter);
+}
+
+.center .button:hover {
+    background-color: var(--colorText);
+    color: var(--sideCenter);
+}
+
+.right {
+    background-color: var(--sideRight);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.right .button:hover {
+    background-color: var(--colorText);
+    color: var(--sideRight);
+}
+
+@media (min-width: 250px) and (max-width: 475px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+
+    .container-itens {
+        width: 100%;
+    }
+
+    .left {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px
+    }
+
+    .right {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 860px) {
+    .container {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+    }
+}
