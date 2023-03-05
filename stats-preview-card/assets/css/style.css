@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Inter: 'Inter';
+    --LexendDeca: 'Lexend Deca';
+    --fontSize: '15px';
+    /* Primary */
+    --backgroundBody: hwb(233 4% 90%);
+    --cardBackground: hwb(244 10% 78%);
+    --softViolet: hsla(277, 82%, 39%, 0.49);
+    /* Neutral */;
+    --white: #fff;
+    --mainParagraph: hwb(0 100% 0% / 0.75);
+    --statHeadings: hwb(0 100% 0% / 0.6);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgroundBody);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--cardBackground);
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.left-side, .right-side {
+    width: 50%;
+}
+
+.left-side {
+    padding: 70px 120px 70px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-side .text-section h1 {
+    font-family: var(--Inter);
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.left-side .text-section p {
+    font-family: var(--Inter);
+    color: var(--mainParagraph);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+span {
+    font-family: var(--Inter);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.violet {
+    color: var(--softViolet);
+}
+
+.left-side .values-section {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side .values-section .value span {
+    font-size: 25px;
+}
+
+.left-side .values-section .value p {
+    font-family: var(--Inter);
+    color: var(--statHeadings);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.right-side {
+    background-image: linear-gradient(90deg, var(--softViolet), var(--softViolet)), url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media (min-width: 250px) and (max-width: 700px) {
+    body {
+        padding: 30px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 30px;
+        height: auto;
+    }
+
+    .text-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-side .text-section h1 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .left-side .text-section p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .right-side {
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(90deg, var(--softViolet), var(--softViolet)), url(../images/image-header-mobile.jpg);
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 15px;
+    }
+
+    .left-side .values-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-side .values-section .value {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1200px) {
+    .container .left-side {
+        width: 60%;
+        padding: 30px 40px;
+    }
+
+    .container .right-side {
+        width: 40%;
+    }
+}
